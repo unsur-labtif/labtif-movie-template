@@ -152,6 +152,23 @@
         border-radius: 4px;
         object-fit: cover;
       }
+      .title-cell {
+        width: 150px; 
+      }
+
+      .genre-cell {
+        width: 120px; 
+      }
+
+      .description-cell {
+        width: auto; 
+        white-space: normal;
+        word-wrap: break-word;
+      }
+
+      .action-cell {
+        width: 120px;
+      }
 
       .movie-info {
         display: flex;
@@ -174,7 +191,10 @@
       .movie-description {
         font-size: 0.875rem;
         color: #9ca3af;
+        white-space: normal;
+        word-break: break-word;
       }
+      
 
       .edit-link {
         display: inline-flex;
