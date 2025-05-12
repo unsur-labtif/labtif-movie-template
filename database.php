@@ -15,9 +15,15 @@
             }
         }
 
-        function select($table)
+        function select($table, $where = null)
         {
             $sql = "SELECT * FROM $table";
+
+            if ($where != null) {
+                foreach ($where as $key => $value) {
+                    $sql .= " WHERE $key = '$value'";
+                }
+            }
 
             $result = $this->mysqli->query($sql);
 

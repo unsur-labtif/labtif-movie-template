@@ -21,12 +21,8 @@
         <nav class="nav-menu">
           <a href="#">Home</a>
           <a href="crud/index.php">Movies</a>
-          <!-- <div class="dropdown">
-            <button class="dropdown-toggle">More</button>
-            <div class="dropdown-menu">
-              <a href="#">Login</a>
-            </div>
-          </div> -->
+          <a href="#" class="btn-login">Login</a>
+          <a href="#" class="btn-register">Register</a>
         </nav>
       </div>
     </header>
@@ -34,7 +30,6 @@
     <!-- Hero -->
     <div class="hero">
       <div class="hero-container">
-        <!-- Announcement Banner -->
         <div>
           <a href="#" class="announcement">
             LABTIF Connect - Join to Discord Community
@@ -55,19 +50,16 @@
           </a>
         </div>
 
-        <!-- Title -->
         <h1 class="hero-title">
           Let's Watch <span class="text-gradient">Together</span>
         </h1>
 
-        <!-- Subtitle -->
         <p class="hero-subtitle">
           Selamat datang di Labtif Movie – katalog film karya mahasiswa.
           Jelajahi berbagai genre, temukan cerita unik, dan saksikan kreativitas
           tanpa batas dalam setiap tayangan.
         </p>
 
-        <!-- Buttons -->
         <div class="hero-buttons">
           <a href="#" class="btn-started">
             Let's Start
@@ -116,7 +108,7 @@
       $datas = $movie->getAllMovies();
         foreach ($datas as $data) {
           ?>
-          <a class="card" href="#">
+          <a class="card" href="crud/moviedetail.php?id=<?= "$data[id]"?>">
             <div class="card-image-container">
             <img class="card-image" src="images/<?= "$data[cover] "?>" />
             </div>

@@ -14,4 +14,9 @@ class Movie
     {
         return $this->db->select('movies');
     }
+
+    public function getMovieById($id)
+    {
+        return $this->db->select('movies', ['id' => $id]);
+    }
 }
