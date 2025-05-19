@@ -25,6 +25,9 @@
         <a href="crud/index.php">Movies</a>
         <a href="auth/loginForm.php" class="btn-login">Login</a>
         <a href="auth/registerForm.php" class="btn-register">Register</a>
+        <form action="" method="post">
+          <input type="submit" name="logout" value="Logout" class="btn-logout" />
+        </form>
       </nav>
     </div>
   </header>

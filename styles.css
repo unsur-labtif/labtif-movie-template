@@ -111,7 +111,8 @@ body {
   display: block;
 }
 .btn-login,
-.btn-register {
+.btn-register,
+.btn-logout {
   padding: 8px 16px;
   border-radius: 6px;
   font-weight: 500;
@@ -138,6 +139,17 @@ body {
 .btn-register:hover {
   background: linear-gradient(to top left, #7c3aed, #2563eb);
   transform: translateY(-1px);
+}
+.btn-logout {
+  cursor: pointer;
+  background-color: red;
+  border: 1px solid #333;
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: transparent;
+  border-color: #555;
 }
 
 /* Hero Section */
