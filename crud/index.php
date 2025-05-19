@@ -241,7 +241,7 @@
 
               <div>
                 <div class="header-buttons">
-                  <a class="add-movie-btn" href="#">
+                  <a class="add-movie-btn" href="create.php">
                     <svg
                       class="plus-icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -325,8 +325,8 @@
                       </td>
                       <td class="action-cell">
                         <div>
-                          <a class="edit-link" href="#"> Edit </a>
-                          <a class="delete-link" href="#"> Delete </a>
+                          <a class="edit-link" href="<?="update.php?id=$data[id]"?>"> Edit </a>
+                          <a class="delete-link" onclick="return confirm('apakah anda yakin?')" href="<?="delete.php?id=$data[id]"?>"> Delete </a>
                         </div>
                       </td>
                     </tr>
